@@ -11,7 +11,7 @@ import { EveHomeKitTypes } from 'homebridge-lib/EveHomeKitTypes';
  * This class is the main constructor for your plugin, this is where you should
  * parse the user config and discover/register accessories with Homebridge.
  */
-export class ExampleHomebridgePlatform implements DynamicPlatformPlugin {
+export class CellomaticsIrrigationSystemPlatform implements DynamicPlatformPlugin {
   public readonly Service: typeof Service;
   public readonly Characteristic: typeof Characteristic;
 
@@ -41,7 +41,7 @@ export class ExampleHomebridgePlatform implements DynamicPlatformPlugin {
     this.CustomServices = new EveHomeKitTypes(this.api).Services;
     this.CustomCharacteristics = new EveHomeKitTypes(this.api).Characteristics;
 
-    this.log.debug('Finished initializing platform:', this.config.name);
+    this.log.debug('Finished initializing platform: CellomaticsIrrigationSystem', this.config.name);
 
     this.username = this.config.username;
     this.password = this.config.password;
