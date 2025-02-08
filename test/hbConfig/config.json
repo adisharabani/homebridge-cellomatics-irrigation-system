@@ -23,8 +23,8 @@
       "debug": false
     },
     {
-      "name": "homebridge-plugin-name",
-      "platform": "ExampleHomebridgePlugin"
+      "name": "homebridge-cellomatics-irrigation-system",
+      "platform": "CellomaticsIrrigationSystem"
     }
   ],
   "accessories": []
