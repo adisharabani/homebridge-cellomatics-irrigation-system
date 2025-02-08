@@ -11,6 +11,34 @@
         "type": "string",
         "required": true,
         "default": "Example Dynamic Platform"
+      },
+      "username": {
+        "title": "Username",
+        "type": "string",
+        "required": true
+      },
+      "password": {
+        "title": "Password",
+        "type": "string",
+        "required": true
+      },
+      "valves": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "title": "Name",
+              "type": "string",
+              "required": true
+            },
+            "expose": {
+              "title": "Expose",
+              "type": "boolean",
+              "required": true
+            }
+          }
+        }
       }
     }
   }
